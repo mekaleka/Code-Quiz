@@ -1,0 +1,19 @@
+/*styling for html background color and font size.*/
+:root {
+    background-color: lightgrey;
+    font-size: 62.5%
+}
+
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding:0;
+    color: darkgray
+}
+
+
+
+
+
+
