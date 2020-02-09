@@ -1,0 +1,27 @@
+
+/*allows boxes for choices to be spaced evenly with dotted border, spacing, font sizing, margin and color.*/
+.choice-container {
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1.8rem;
+    border: 0.1rem dotted darkgoldenrod;
+    background-color: white;
+}
+/*creates hover effect notice boxes jump 2px more on this page*/
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(233, 200, 91, 0.822);
+    transform: translateY(-0.3rem);
+    transition: transform 150ms;
+}
+/*padding allows for letters to be centered*/
+.choice-prefix {
+    padding: 1.5rem 2.5rem;
+    background-color: darkgoldenrod;
+    color: white;
+}
+/*padding allows for text to be pushed to center*/
+.choice-text {
+    padding: 1.5rem;
+}
