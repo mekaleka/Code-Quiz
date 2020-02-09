@@ -1,19 +1,59 @@
-/*styling for html background color and font size.*/
+/*styling for html background color and font size.62.5% sets rem. :root will target index.html*/
 :root {
-    background-color: lightgrey;
-    font-size: 62.5%
+  background-color: silver;
+  /*using rem sets default to the root file*/
+  font-size: 62.5%;
 }
 
-*{
-    box-sizing: border-box;
-    font-family: sans-serif;
-    margin: 0;
-    padding:0;
-    color: darkgray
+/*styling for quiz box and box sizing with border box*/
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  color: rgb(136, 27, 27);
 }
 
+/*Adding margin-bottom to h1-h4 tags*/
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 1rem;
+}
+/*set h1 size 42px with rem, color, margin bottom and color to gold*/
+h1 {
+  font-size: 5.4rem;
+  color: darkgoldenrod;
+  margin-bottom: 5rem;
+}
+/**/
 
-
-
-
-
+/*centering content with flex box and correcting padding*/
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+/*child of container*/
+.container > * {
+  width: 100%;
+}
+/*flipped flex box to a column*/
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+/*center content*/
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+/*center content*/
+.justify-center {
+  justify-content: center;
+}
