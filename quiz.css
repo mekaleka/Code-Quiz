@@ -1,4 +1,3 @@
-
 /*allows boxes for choices to be spaced evenly with dotted border, spacing, font sizing, margin and color.*/
 .option-container {
     display: flex;
@@ -21,7 +20,8 @@
     background-color: darkgoldenrod;
     color: white;
 }
-/*padding allows for text to be pushed to center*/
+/*padding allows for text to be pushed to center and width allows button to be clicked*/
 .option-text {
     padding: 1.5rem;
+    width: 100%;
 }
