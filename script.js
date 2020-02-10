@@ -16,29 +16,45 @@ let availableQuestions = [];
 //Questions with options for answers and a checker for correct answer.
 let questions = [
     {
-      question: "Inside which HTML element do we put the JavaScript?",
-      option1: "<script>",
-      option2: "<javascript>",
-      option3: "<js>",
-      option4: "<scripting>",
-      answer: 1
-    },
-    {
-      question:
-        "What is the correct syntax for reerring to an external script called 'xxx.js'?",
-      option1: "<script href='xxx.js'>",
-      option2: "<script name='xxx.js'>",
-      option3: "<script src='xxx.js'>",
-      option4: "<script file='xxx.js'>",
+      question: "Commonly used data types DO NOT include:",
+      option1: "Strings",
+      option2: "Booleans",
+      option3: "Alerts",
+      option4: "Numbers",
       answer: 3
     },
     {
-      question: "How do you write 'Hello World' in an alert box?",
-      option1: "msgBox('Hello World');",
-      option2: "alertBox('Hello World');",
-      option3: "msg('Hello World');",
-      option4: "alert('Hello World');",
+      question:
+        "The condition in an if/else statement is enclosed within___.",
+      option1: "Quotes",
+      option2: "Curley Brackets",
+      option3: "Parentheses",
+      option4: "Square Brackets",
+      answer: 3
+    },
+    {
+      question: "Arrays in JavaScript can be used to store___.",
+      option1: "Numbers and Strings",
+      option2: "Other Arrays",
+      option3: "Booleans",
+      option4: "All of the above",
       answer: 4
+    },
+    {
+     question: "String values must be enclosed within__ when being assigned to variables.",
+     option1: "msgBox('Hello World');",
+     option2: "alertBox('Hello World');",
+     option3: "msg('Hello World');",
+     option4: "alert('Hello World');",
+     answer: 3
+    },
+    {
+     question: "A very useful tool used during development and debugging for printing content to the debugger is.",
+     option1: "JavaScript",
+     option2: "terminal/Bash",
+     option3: "for loops;",
+     option4: "console.log",
+     answer: 4
     }
   ],
   //A correct bonus for when a question is answered correctly.
