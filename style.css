@@ -44,7 +44,7 @@ h3 {
     font-weight: 500;
 }
 
-/*centering content with flex box and correcting padding*/
+/*centering content with flex box and added padding for responsiveness*/
 .container {
   width: 100vw;
   height: 100vh;
@@ -53,6 +53,7 @@ h3 {
   align-items: center;
   max-width: 80rem;
   margin: 0 auto;
+  padding: 2rem;
 }
 /*centers child elements horizontally*/
 .container > * {
