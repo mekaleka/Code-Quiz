@@ -89,8 +89,8 @@ h3 {
 .btn:hover {
     cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem 0 rgba(233, 200, 91, 0.822);
-    transform: translateY(-0.1rem);
-    transition: transform 150ms;
+    transform: translateY(-0.3rem);
+    transition: transform 300ms;
 }
 /**/
 .btn[disabled]:hover {
