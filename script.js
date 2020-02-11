@@ -112,8 +112,13 @@ options.forEach(option => {
       selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
     console.log(classToApply);
 
-    //loads a new question after selected a question.
-    getNewQuestion();
+    selectedOption.parentElement.classList.add(classToApply);
+
+    //loads a new question after selected a question. Sets a call back function for a delay. Wait 1 sec.
+    setTimeout(() => {
+      selectedOption.parentElement.classList.remove(classToApply);
+      getNewQuestion();
+    }, 1000);
   });
 });
 //star function.

@@ -82,7 +82,7 @@ h3 {
     border: 0.1rem dotted darkgoldenrod;
     margin-bottom: 1rem;
     text-decoration: none;
-    color: darkgoldenrod;
+    color: rgb(10, 8, 3);
     background-color: white;
 }
 /*creates a hover effect, and allows button to jump up 1px for effect, transition allow for a smooth transition*/
