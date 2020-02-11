@@ -2,6 +2,8 @@
 const question = document.getElementById("question");
 //Array of options with getElementByClassName.
 const options = Array.from(document.getElementsByClassName("option-text"));
+const questionCounterText = document.getElementById('questionCounter');
+const scoreText = document.getElementById('score');
 //variables
 let currentQuestion = {};
 //variable for creating a short delay after selecting answers.
@@ -82,6 +84,8 @@ getNewQuestion = () => {
 
   //question qounter to add 1
   questionCounter++;
+  //updates question counter as each new question is presented. 
+  questionCounterText.innerText = questionCounter + "/" + MAX_QUESTIONS;
   //gets a random question throught the questions array length.
   const questionIndex = Math.floor(Math.random() * availableQuestions.length);
   //
@@ -112,6 +116,10 @@ options.forEach(option => {
       selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
     console.log(classToApply);
 
+    if(classToApply == 'correct') {
+      incrementScore(CORRECT_BONUS);
+    }
+
     selectedOption.parentElement.classList.add(classToApply);
 
     //loads a new question after selected a question. Sets a call back function for a delay. Wait 1 sec.
@@ -121,5 +129,10 @@ options.forEach(option => {
     }, 1000);
   });
 });
+//updates score text with new score. 
+incrementScore = num => {
+  score +=num
+  scoreText.innerText = score;
+}
 //star function.
 startGame();
