@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Score</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!---->
+        <div id="end" class="flex-center flex-column">
+            <h1 id="finalScore"></h1>
+            <form>
+                <!--save initials buttons and id-->
+                <input type="text" name="initials" id="initials" placeholder="initials" />
+                <!--Save score button, classes and id's-->
+                <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)"
+                    disabled>Save</button>
+            </form>
+            <a class="btn" href="/quiz.html">Try Again</a>
+            <a class="btn" href="/">End Turn</a>
+        </div>
+    </div>
+
+    <script src="FinalScore.js"></script>
+</body>
+
+</html>

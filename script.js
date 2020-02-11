@@ -2,9 +2,9 @@
 const question = document.getElementById("question");
 //Array of options with getElementByClassName.
 const options = Array.from(document.getElementsByClassName("option-text"));
-const progressText = document.getElementById('progressText');
-const scoreText = document.getElementById('score');
-const progressBarFull = document.getElementById("progressBarFull")
+const progressText = document.getElementById("progressText");
+const scoreText = document.getElementById("score");
+const progressBarFull = document.getElementById("progressBarFull");
 //variables
 let currentQuestion = {};
 //variable for creating a short delay after selecting answers.
@@ -80,12 +80,13 @@ startGame = () => {
 getNewQuestion = () => {
   //allows for application to access the end quiz file after max questions reached.
   if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
-    return window.location.assign("/endQuiz.html");
+    localStorage.setItem("mostRecentScore", score);
+    return window.location.assign("/FinalScore.html");
   }
 
   //question qounter to add 1
   questionCounter++;
-  //updates question counter as each new question is presented. 
+  //updates question counter as each new question is presented.
   progressText.innerText = `question ${questionCounter}/${MAX_QUESTIONS}`;
   progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
   //gets a random question throught the questions array length.
@@ -118,23 +119,23 @@ options.forEach(option => {
       selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
     console.log(classToApply);
 
-    if(classToApply == 'correct') {
+    if (classToApply == "correct") {
       incrementScore(CORRECT_BONUS);
     }
-//
+    //
     selectedOption.parentElement.classList.add(classToApply);
 
     //loads a new question after selected a question. Sets a call back function for a delay. Wait 1 sec.
     setTimeout(() => {
       selectedOption.parentElement.classList.remove(classToApply);
       getNewQuestion();
-    }, 1000);
+    }, 700);
   });
 });
-//updates score text with new score. 
+//updates score text with new score.
 incrementScore = num => {
-  score +=num
+  score += num;
   scoreText.innerText = score;
-}
+};
 //star function.
 startGame();
