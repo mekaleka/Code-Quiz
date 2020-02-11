@@ -2,8 +2,9 @@
 const question = document.getElementById("question");
 //Array of options with getElementByClassName.
 const options = Array.from(document.getElementsByClassName("option-text"));
-const questionCounterText = document.getElementById('questionCounter');
+const progressText = document.getElementById('progressText');
 const scoreText = document.getElementById('score');
+const progressBarFull = document.getElementById("progressBarFull")
 //variables
 let currentQuestion = {};
 //variable for creating a short delay after selecting answers.
@@ -85,7 +86,8 @@ getNewQuestion = () => {
   //question qounter to add 1
   questionCounter++;
   //updates question counter as each new question is presented. 
-  questionCounterText.innerText = questionCounter + "/" + MAX_QUESTIONS;
+  progressText.innerText = `question ${questionCounter}/${MAX_QUESTIONS}`;
+  progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
   //gets a random question throught the questions array length.
   const questionIndex = Math.floor(Math.random() * availableQuestions.length);
   //
@@ -119,7 +121,7 @@ options.forEach(option => {
     if(classToApply == 'correct') {
       incrementScore(CORRECT_BONUS);
     }
-
+//
     selectedOption.parentElement.classList.add(classToApply);
 
     //loads a new question after selected a question. Sets a call back function for a delay. Wait 1 sec.

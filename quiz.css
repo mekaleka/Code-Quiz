@@ -36,7 +36,7 @@
 
 #hud {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .hud-prefix {
@@ -46,4 +46,16 @@
 
 .hud-main-text {
     text-align: center;
+}
+/*progress bar styling*/
+#progressBar {
+    width: 20rem;
+    height: 4rem;
+    border: 0.3rem solid darkgoldenrod;
+}
+/*progress bar styling when full*/
+#progressBarFull {
+    height: 3.4rem;
+    background-color: darkgoldenrod;
+    width: 0%;
 }
