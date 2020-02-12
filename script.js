@@ -84,7 +84,7 @@ getNewQuestion = () => {
   //allows for application to access the end quiz file after max questions reached.
   if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
     localStorage.setItem("mostRecentScore", score);
-    return window.location.assign("/FinalScore.html");
+    return window.location.assign("final.html");
   }
 
   //question qounter to add 1
