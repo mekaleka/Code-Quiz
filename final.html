@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Final Score</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+    <!--container wrapping final score end page-->
     <div class="container">
         <!---->
-        <div id="end" class="flex-center flex-column">
+        <div id="final" class="flex-center flex-column">
             <h1 id="finalScore"></h1>
             <form>
                 <!--save initials buttons and id-->
@@ -20,7 +22,7 @@
                 <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)"
                     disabled>Save</button>
             </form>
-            <a class="btn" href="/quiz.html">Try Again</a>
+            <a class="btn" href="quiz.html">Try Again</a>
             <a class="btn" href="/">End Turn</a>
         </div>
     </div>

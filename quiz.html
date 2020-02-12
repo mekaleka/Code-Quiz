@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <title>Start Quiz</title>
     <!--style css and quiz css linked here-->
     <link rel="stylesheet" href="style.css" />
@@ -26,6 +27,7 @@
                         <div id="progressBarFull"></div>
                     </div>
                 </div>
+                <!--id's and class for styling score buttons-->
                 <div id="hud-item">
                     <p class="hud-prefix">
                         Score
@@ -35,10 +37,12 @@
                     </h1>
                 </div>
             </div>
+            <!--question constiner for questions to be displayed-->
             <h2 id="question">Select one for the correct answer.</h2>
+            <!--option containers for options 1 thru 4-->
             <div class="option-container">
+                <!--option prefix, text and data numb allows for styling and access to options-->
                 <p class="option-prefix">A</p>
-                <!--Data number allows for access to options-->
                 <p class="option-text" data-number="1">Option 1</p>
             </div>
             <div class="option-container">
