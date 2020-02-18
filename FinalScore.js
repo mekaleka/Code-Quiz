@@ -30,7 +30,6 @@ saveHighScore = e => {
 
   highScores.sort((a, b) => b.score - a.score);
   //allows for a max of 5 initials logged.
-
   highScores.splice(5);
 
   localStorage.setItem("highScores", JSON.stringify(highScores));

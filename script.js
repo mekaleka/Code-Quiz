@@ -1,6 +1,6 @@
-//Reference to the questionn with getElementById.
+//Reference to the question with getElementById.
 const question = document.getElementById("question");
-//Array of options with getElementByClassName.
+//Access the array to display the question bar 1/5 progress
 const options = Array.from(document.getElementsByClassName("option-text"));
 
 const progressText = document.getElementById("progressText");
@@ -89,7 +89,7 @@ getNewQuestion = () => {
 
   //question qounter to add 1
   questionCounter++;
-  //updates question counter as each new question is presented. `Question is what will be displayed.
+  //updates question counter as each new question is presented. Question is what will be displayed.
   progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
   progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
   //gets a random question thruought the questions array length.
@@ -140,5 +140,5 @@ incrementScore = num => {
   score += num;
   scoreText.innerText = score;
 };
-//star function.
+//start function.
 startGame();

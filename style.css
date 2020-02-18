@@ -12,16 +12,17 @@
   margin: 0;
   padding: 0;
   color: darkgoldenrod;
+  
 }
 
 /*Adding margin-bottom to h1-h4 tags*/
-h1,
+/* h1,
 h2,
-h3,
+h3, */
 h4 {
   margin-bottom: 1rem;
 }
-/*set h1 size 42px with rem, color, margin bottom and color to gold*/
+/*set h1 code quiz on start page size 42px with rem, color, margin bottom and color to gold*/
 h1 {
   font-size: 5.4rem;
   color: darkgoldenrod;
@@ -32,7 +33,7 @@ h1 > span {
     font-size: 2.4rem;
     font-weight: 500;
 }
-/**/
+/*sets the questions text size */
 h2 {
     font-size: 4.2rem;
     font-weight: 700;
@@ -44,7 +45,7 @@ h3 {
     font-weight: 500;
 }
 
-/*centering content with flex box and added padding for responsiveness*/
+/*centering content with flex box and added padding for responsiveness to start quiz page*/
 .container {
   width: 100vw;
   height: 100vh;
@@ -98,7 +99,7 @@ h3 {
     box-shadow: none;
     transform: none;
 }
-
+/*vertically alligns form imput on  score page*/
 form {
   width: 100%;
   display: flex;
