@@ -17,4 +17,4 @@ This Code Quiz presents you with the start screen and a start button. When click
 
 Michael Plichta
 
-[Link to Deployed App](https://mekaleka.github.io/Code-Quiz/)
+[Link to Deployed App](https://mekaleka.github.io/code-quiz/)
