@@ -2,7 +2,7 @@
 
 ![codequiz](https://user-images.githubusercontent.com/58678985/75116482-1f2cd800-5626-11ea-8bdc-1bc8252055af.png)
 
-    The concept for my Code Quiz came from a YouTube tutorial for a "Build a Quiz App" by James Q Quick.(https://www.youtube.com/playlist?list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx)
+    The concept for my Code Quiz came from a YouTube tutorial for a [Build a Quiz App by James Q Quick](https://www.youtube.com/playlist?list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx)
 
     I am using this tutorial to help me understand the conctpt and layout of multiple screen switching using HTML, CSS and JavaScript. To learn how to use tools and extensions like Live Server, Emmet and Rem in HTML and CSS. My bigest challange in this project is putting the js together and learning the functionality. That is why I used the tutorial. I also wanted to make a quiz that was more then just a window with questions but to have it shine. In addition I learned a few techniques like adding box shadow, transition and transform.  
 
