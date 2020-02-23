@@ -1,4 +1,4 @@
-# Code-Quiz
+# Code Quiz
 
 ![codequiz](https://user-images.githubusercontent.com/58678985/75116482-1f2cd800-5626-11ea-8bdc-1bc8252055af.png)
 
