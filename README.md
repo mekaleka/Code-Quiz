@@ -6,7 +6,7 @@ The concept for my Code Quiz came from a YouTube tutorial for a [Build a Quiz Ap
 
 I am using this tutorial to help me understand the conctpt and layout of multiple screen switching using HTML, CSS and JavaScript. To learn how to use tools and extensions like Live Server, Emmet and Rem in HTML and CSS. My bigest challange in this project is putting the js together and learning the functionality. That is why I used the tutorial. I also wanted to make a quiz that was more then just a window with questions but to have it shine. In addition I learned a few techniques like adding box shadow, transition and transform.  
 
-    This Code Quiz presents you with the start screen and a start button. When clicked you are prompted to answer 5 code questions and when finished you are taken to a final screen where you can see your score and can enter you initials. It then saves your data to local storage. 
+This Code Quiz presents you with the start screen and a start button. When clicked you are prompted to answer 5 code questions and when finished you are taken to a final screen where you can see your score and can enter you initials. It then saves your data to local storage. 
 
     Additional Features Include:
     1. A High scores button to click with top 5 high scores on the start screen.
